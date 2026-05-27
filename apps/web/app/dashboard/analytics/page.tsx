@@ -120,7 +120,7 @@ function ChartTooltip({
 // ── Funnel ───────────────────────────────────────────────────────────────────
 
 function FunnelChart() {
-    const maxVal = funnelData[0].value;
+    const maxVal = funnelData[0]?.value ?? 100;
 
     return (
         <div className="flex flex-col gap-2.5">
@@ -457,4 +457,3 @@ export default function AnalyticsPage() {
         </div>
     );
 }
-

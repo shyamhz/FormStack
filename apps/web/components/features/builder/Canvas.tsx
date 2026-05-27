@@ -27,7 +27,7 @@ export function Canvas({
     function handleDuplicate(fieldId: string) {
         const idx = fields.findIndex((f) => f.id === fieldId);
         if (idx === -1) return;
-        const original = fields[idx];
+        const original = fields[idx]!;
         const copy: BuilderField = { ...original, id: `${original.id}-copy-${Date.now()}` };
         const next = [...fields];
         next.splice(idx + 1, 0, copy);
@@ -111,4 +111,3 @@ export function Canvas({
         </div>
     );
 }
-

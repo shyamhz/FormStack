@@ -10,6 +10,7 @@ import {
     generateUserTokenPayload,
     type GenerateUserTokenPayloadType,
 } from "./model";
+import { env } from "../env";
 
 export default class UserService {
     private async getUserByEmail(email: string) {
@@ -43,7 +44,7 @@ export default class UserService {
 
         const dbInsertRestlt = await db
             .insert(usersTable)
-            .values({ fullName, email, hashedPassword, workspaceName })
+            .values({ fullName, email, passwordHash: hashedPassword, workspaceName })
             .returning({ id: usersTable.id });
 
         if (!dbInsertRestlt || dbInsertRestlt.length === 0 || !dbInsertRestlt[0]?.id) {

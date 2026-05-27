@@ -8,7 +8,7 @@ import { Copy, Check, Globe, EyeOff, Code, ExternalLink, Layers } from "lucide-r
 
 import { QRCode } from "@/components/ui/QRCode";
 
-import { Toggle, SettingToggle } from "@/components/ui/Toggle";
+import { SettingToggle } from "@/components/ui/toggle";
 
 type SubSection = "share" | "settings" | "theme";
 
@@ -301,4 +301,3 @@ export default function BuilderSettingsPage() {
         </div>
     );
 }
-

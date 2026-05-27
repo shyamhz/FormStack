@@ -91,7 +91,7 @@ export default function SignupPage() {
             workspaceName,
         });
 
-        router.push("/dashboard");
+        router.push("/forms");
     };
 
     return (

@@ -185,7 +185,7 @@ export function Sidebar() {
 function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
         <div className="text-[10px] font-semibold text-muted-2 tracking-[0.1em] px-2.5 pb-1.5">
-            {children.toString().toUpperCase()}
+            {children?.toString().toUpperCase()}
         </div>
     );
 }

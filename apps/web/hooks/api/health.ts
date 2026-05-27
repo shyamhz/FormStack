@@ -1,4 +1,4 @@
-import { trpc } from "~/trpc/client";
+import { trpc } from "@/trpc/client";
 
 export function useHealth() {
     const { error, data, isFetched, isFetching, isLoading, status } =
