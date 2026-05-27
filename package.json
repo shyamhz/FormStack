@@ -8,6 +8,7 @@
         "db:down": "docker compose down",
         "db:generate": "dotenv -- turbo db:generate",
         "db:migrate": "dotenv -- turbo db:migrate",
+        "gen:sec": "node -e \"console.log(require('crypto').randomBytes(64).toString('hex'))\"",
         "lint": "turbo run lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "check-types": "turbo run check-types"
