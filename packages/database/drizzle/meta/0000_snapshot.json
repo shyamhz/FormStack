@@ -1,5 +1,5 @@
 {
-  "id": "d527eacb-7d80-4648-9a7a-62ed9d2d071d",
+  "id": "4504ba05-c071-445a-816d-a1bfdec341d8",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -32,6 +32,12 @@
           "type": "text",
           "primaryKey": false,
           "notNull": false
+        },
+        "workspace_name": {
+          "name": "workspace_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
         },
         "created_at": {
           "name": "created_at",

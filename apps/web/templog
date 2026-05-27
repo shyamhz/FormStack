@@ -1,0 +1,3 @@
+./node_modules/react-resizable-panels/package.json:    "react-router-dom": "^7.6.3",
+./node_modules/recharts/package.json:    "@types/react-router-dom": "^5.1.7",
+./node_modules/recharts/package.json:    "react-router-dom": "^5.1.2",
